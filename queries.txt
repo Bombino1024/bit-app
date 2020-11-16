@@ -1,0 +1,58 @@
+# CREATE
+mutation{
+  createPost(title: "test6"){
+    id
+    title
+  }
+}
+
+# LIST
+{
+  posts{
+    id
+    title
+  }
+}
+
+# DETAIL
+{
+  post(id:"5f94659f92f45e1744b370bb"){
+    id
+    title
+  }
+}
+
+# UPDATE
+mutation{
+  updatePost(id: "5f9465c45305034d600dd086", 
+    title: "test2-6"){
+    id
+    title
+  }
+}
+
+# DELETE
+mutation{
+  deletePost(id: "5f948f3437150e64f00112ff"){
+    id
+    title
+  }
+}
+
+# GET DB STRUCTURE 
+query Introspection{
+  __schema{
+    types{
+      name
+    }
+  }
+}
+
+# GET TABLE STRUCTURE
+query Introspection{
+ __type(name: "Post"){
+    fields{
+      name
+    }
+  }
+}
