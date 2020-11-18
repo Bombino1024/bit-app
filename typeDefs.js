@@ -2,11 +2,7 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql(`
   type Query {
-    posts: [Post!]!
-    post(id: String!): Post!
-    unathorizedGet(title: String!): [Post!]!
-    unathorizedLogin(username: String!, password: String!): [Login!]!
-    unathorizedGet2(title: String!): [Post!]!
+    getPost(title: String!): [Post!]!
   }
   type Post {
     id: ID!
@@ -21,9 +17,7 @@ const typeDefs = gql(`
   }
   type Mutation {
     createPost(title: String!, description: String!, owner: String!): Post!
-    updatePost(id: String!, title: String!): Post!
-    deletePost(id: String!): Post!
-    unathorizedDelete(title: String!): [Post!]!
+    deletePost(title: String!): [Post!]!
   }
   `);
 
