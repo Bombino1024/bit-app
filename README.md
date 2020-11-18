@@ -5,7 +5,7 @@ This express js application is server side of vulnerable web application. You ca
 2. Create database in GUI
 3. Clone this repository
 4. Open project in IDE / Code editor (recommended: VS Code)
-5. Change database properties in .env file to your created database
+5. Change database properties in .env file if needed
 6. Install additional packages (npm install)
 5. Run server side app (npm start)
 # Tutorial
