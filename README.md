@@ -13,3 +13,12 @@ This express js application is server side of vulnerable web application. You ca
 In package [models](https://github.com/Bombino1024/bit-app/tree/master/models) you can find defined schema for database entities
 ## GraphQL GUI
 You can navigate to /graphql endpoint, where you can find implemented console GUI for running GraphQL queries 
+#Examples
+## Introspection queries
+Getting database structure
+
+![alt text](https://github.com/Bombino1024/bit-app/blob/master/assets/server1.png)
+
+Getting structure of specific table
+
+![alt text](https://github.com/Bombino1024/bit-app/blob/master/assets/server2.png)
